@@ -1,0 +1,10 @@
+#!/bin/bash
+./hsh
+ls
+/bin/ls
+/bin/ls -l
+^[[D^[[D^[[D
+^[[C^[[C^[[C^[[C
+exit
+echo "/bin/ls" | ./hsh
+

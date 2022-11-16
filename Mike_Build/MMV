@@ -1,0 +1,8 @@
+#!/bin/bash
+mv _auxFunctions.c ..
+mv _shelExecution.c ..
+mv _shellFunc2.c ..
+mv shell.h ..
+mv  _shell.c ..
+mv _shellFunc.c ..
+mv _shellMemory.c ..

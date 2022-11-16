@@ -1,0 +1,23 @@
+#!/bin/bash
+mv _atoi.c Sam_Code
+mv builtin.c Sam_Code
+mv errors1.c Sam_Code
+mv exits.c Sam_Code
+mv getinfo.c Sam_Code
+mv history.c Sam_Code
+mv lists.c Sam_Code
+mv parser.c Sam_Code
+mv realloc.c Sam_Code
+mv shell.h Sam_Code
+mv atoi.c Sam_Code
+mv builtin1.c Sam_Code
+mv environ.c Sam_Code
+mv errors.c Sam_Code
+mv getenv.c Sam_Code
+mv getLine.c Sam_Code
+mv lists1.c Sam_Code
+mv main.c Sam_Code
+mv memory.c Sam_Code
+mv _atoi.c Sam_Code
+mv _atoi.c Sam_Code
+mv _atoi.c Sam_Code

@@ -1,0 +1,23 @@
+Seem to have covered all aspects of the project.
+
+Have not run into memory leaks
+
+Managed to create a directory and test file.
+
+Need to run more possible checks
+
+Betty has been tackeled on most functions (*task is tedious)
+
+Have a tempory fix for GCC warning, need to look at a ppossible work around.
+
+Creating a Cache of Clang within the root of the project?
+  *Look into creating a CACHE
+
+Need to improve the following cd command to handle cd to go home when cd is just used
+
+Need to do a man page 
+Need to do Authors 
+Need to do README.md
+
+
+Check Through all TODOS by 13/11/2022

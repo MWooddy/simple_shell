@@ -1,0 +1,19 @@
+NOTES
+What is a shell: 
+Resource 1: 
+C shell is the UNIX shell (command execution program, often called a command interpreter ) created by Bill Joy at the University of California at Berkeley as an alternative to UNIX's original shell, the Bourne shell . These two UNIX shells, along with the Korn shell , are the three most commonly used shells. The C shell program name is csh , and the shell prompt (the character displayed to indicate readiness for user input) is the % symbol. The C shell was invented for programmers who prefer a syntax similar to that of the C programming language.
+(According to WhatIs )
+
+Resource 2: 
+What Does C Shell (csh) Mean?
+The C shell (csh) is a command shell for Unix-like systems that was originally created as part of the Berkeley Software Distribution (BSD) in 1978. Csh can be used for entering commands interactively or in shell scripts. The shell introduced a number of improvements over the earlier Bourne shell designed for interactive use. These include history, editing operations, a directory stack, job control and tilde completion. Many of these features were adopted in the Bourne Again shell (bash), Korn shell (ksh) and in the Z shell (zsh). A modern variant, tcsh, is also very popular.
+
+Techopedia Explains C Shell (csh)
+The C shell was created by Bill Joy while he was a graduate student at UC Berkeley in the late 1970s. It was first released as part of the 2BSD Berkeley Software Distribution of Unix in 1978.
+
+The C shell gets its name from its syntax, which is intended to resemble the C programming language.
+
+The C shell introduced features that were intended to make it easier to use interactively at the command line, though like other shells it is capable of being scripted. One of the most notable features was command history. Users can recall previous commands they have entered and either repeat them or edit these commands. Aliases allow users to define short names to be expanded into longer commands. A directory stack lets users push and pop directories on the stack to jump back and forth quickly. The C shell also introduced the standard tilde notation where "~" represents a user's home directory.
+
+Most of these features have been incorporated into later shells, include the Bourne Again shell, the Korn shell and the Z shell. A popular variant is tsch, which is the current default shell on BSD systems, as well as on early versions of Mac OS X.
+(According to techopedia)

@@ -1,50 +1,50 @@
 #ifndef _SHELL_H_
 #define _SHELL_H_
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/wait.h>
+#include <stdbool.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <unistd.h>
-#include <string.h>
-#include <fcntl.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
 #include <signal.h>
-#include <stdarg.h>
-#include <math.h>
-#include <locale.h>
 #include <errno.h>
+#include <fcntl.h>
 
+#include "alias.h"
+#include "builtins.h"
+#include "command.h"
+#include "ctype.h"
+#include "dict.h"
+#include "env.h"
+#include "error.h"
+#include "info.h"
+#include "list.h"
+#include "path.h"
+#include "quote.h"
+#include "string.h"
+#include "tokens.h"
+#include "types.h"
 
-/*Shell Gen Funcs*/
-int main(int ac, char **av, char **env);
-void _shellPrompt(void);
-void handle(int signals);
-void _EOF(char *buffer);
-void free_dp(char **command);
-void free_exit(char **command);
-void shell_exit(char **command);
-int change_dir(const char *path);
-/*Execution*/
-void execute(char **command, char *name, char **env, int cycles);
-void print_env(char **env);
-char **_getPATH(char **env);
-void msgerror(char *name, int cycles, char **command);
+extern char **environ;
 
-/*Create child and Change Directory*/
-void create_child(char **command, char *name, char **env, int cycles);
+bool read_input(info_t *info);
+quote_state_t _read_input(char **lineptr, int fd);
 
-/*Tokening*/
-char **tokening(char *buffer, const char *s);
+int parse(info_t *info);
 
-/*Aux Functions*/
-int _strcmp(char *s1, char *s2);
-unsigned int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-/*Get Function
-*Addtional handlers
-*More posible checks
-*/
-#endif
+int execute(info_t *info);
+int _execute(info_t *info);
+
+void expand_aliases(alias_t *aliases, char ***tokptr);
+char *expand_alias(alias_t *aliases, char ***tokptr);
+
+void expand_vars(info_t *info, char ***tokptr);
+char **_expand_vars(info_t *info, char ***tokptr);
+
+void remove_comments(cmdlist_t *cmd);
+
+void open_script(info_t *info);
+
+void _sigint(int signal);
+
+#endif /* SHELL_H */
